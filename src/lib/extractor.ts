@@ -5,7 +5,7 @@ export const userNameExtractor = (url: string): string => {
 
   if (!pathSegments.length) throw new Error(`Invalid URL.`);
   const instagramIndex = pathSegments.findIndex(
-    (segment) => segment === "instagram.com"
+    (segment) => segment === "www.instagram.com"
   );
 
   if (instagramIndex === -1)
